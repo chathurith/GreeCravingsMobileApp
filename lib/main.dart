@@ -1,30 +1,30 @@
-import 'package:flutter/material.dart' show BuildContext, MaterialApp, StatelessWidget, Widget, WidgetsFlutterBinding, runApp;
-import 'package:flutter/services.dart';
-// ignore: unused_import
-import 'package:flutter/scheduler.dart';
-import 'package:application6/theme/theme_helper.dart';
-import 'package:application6/routes/app_routes.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_mobile_app/pages/canteen_process.dart';
+import 'package:flutter_mobile_app/pages/order_issuin.dart';
+import 'package:flutter_mobile_app/pages/order_validation.dart';
 
 void main() {
-  WidgetsFlutterBinding.ensureInitialized();
-  SystemChrome.setPreferredOrientations([
-    DeviceOrientation.portraitUp,
-  ]);
-
-  ///Please update theme as per your need if required.
-  ThemeHelper().changeTheme('primary');
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
+
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: theme,
-      title: 'application6',
-      debugShowCheckedModeBanner: false,
-      initialRoute: AppRoutes.staffSignInPageScreen,
-      routes: AppRoutes.routes,
+      theme: ThemeData.dark().copyWith(
+        scaffoldBackgroundColor: const Color.fromARGB(255, 18, 32, 47),
+      ),
+      home: Scaffold(
+        body: ListView(children: [
+          CanteenProcess(),
+          OrderValidationForm(),
+          OrderIssuingPage(),
+        ]),
+      ),
     );
   }
 }
+
