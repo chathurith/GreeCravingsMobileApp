@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:application6/core/app_export.dart';
+import 'package:sign_in_customer/core/app_export.dart';
+
+import 'package:flutter/material.dart';
+import 'package:sign_in_customer/core/app_export.dart';
 
 class AppDecoration {
   // Fill decorations

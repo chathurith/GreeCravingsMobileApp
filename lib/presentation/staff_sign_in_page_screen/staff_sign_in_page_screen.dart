@@ -1,8 +1,8 @@
-import 'package:application6/core/app_export.dart';
-import 'package:application6/widgets/custom_elevated_button.dart';
-import 'package:application6/widgets/custom_icon_button.dart';
-import 'package:application6/widgets/custom_outlined_button.dart';
-import 'package:application6/widgets/custom_text_form_field.dart';
+import 'package:sign_in_customer/core/app_export.dart';
+import 'package:sign_in_customer/widgets/custom_elevated_button.dart';
+import 'package:sign_in_customer/widgets/custom_icon_button.dart';
+import 'package:sign_in_customer/widgets/custom_outlined_button.dart';
+import 'package:sign_in_customer/widgets/custom_text_form_field.dart';
 import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
@@ -126,7 +126,7 @@ class StaffSignInPageScreen extends StatelessWidget {
                                     children: [
                                       CustomOutlinedButton(
                                         width: getHorizontalSize(124),
-                                        text: "Log In",
+                                        text: "Sign Up",
                                       ),
                                       Padding(
                                         padding: getPadding(
@@ -135,7 +135,7 @@ class StaffSignInPageScreen extends StatelessWidget {
                                           bottom: 5,
                                         ),
                                         child: Text(
-                                          "Sign Up",
+                                          "Log In ",
                                           style: CustomTextStyles
                                               .titleLargePrimary,
                                         ),
@@ -183,17 +183,33 @@ class StaffSignInPageScreen extends StatelessWidget {
                                     ],
                                   ),
                                 ),
-                                Align(
-                                  alignment: Alignment.centerRight,
-                                  child: Padding(
-                                    padding: getPadding(
-                                      top: 7,
-                                      right: 12,
-                                    ),
-                                    child: Text(
-                                      "Forgot Password?",
-                                      style: theme.textTheme.bodyMedium,
-                                    ),
+                                Container(
+                                  height: getVerticalSize(28),
+                                  width: getHorizontalSize(247),
+                                  margin: getMargin(
+                                    top: 20,
+                                  ),
+                                  child: Stack(
+                                    alignment: Alignment.topRight,
+                                    children: [
+                                      CustomTextFormField(
+                                        width: getHorizontalSize(247),
+                                        controller: passwordController,
+                                        hintText: "Confirm Password",
+                                        hintStyle: theme.textTheme.bodyMedium!,
+                                        textInputAction: TextInputAction.done,
+                                        textInputType:
+                                            TextInputType.visiblePassword,
+                                        alignment: Alignment.center,
+                                        obscureText: true,
+                                      ),
+                                      CustomImageView(
+                                        imagePath: ImageConstant.imgMaskgroup,
+                                        height: getSize(21),
+                                        width: getSize(21),
+                                        alignment: Alignment.topRight,
+                                      ),
+                                    ],
                                   ),
                                 ),
                                 CustomElevatedButton(

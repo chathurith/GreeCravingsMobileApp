@@ -1,6 +1,6 @@
 {
-    "name": "flutter_mobile_app",
-    "short_name": "flutter_mobile_app",
+    "name": "sign_in_customer",
+    "short_name": "sign_in_customer",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
