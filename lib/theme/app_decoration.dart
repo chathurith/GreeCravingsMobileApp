@@ -1,61 +1,28 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import 'package:sign_in_customer/core/app_export.dart';
 
 import 'package:flutter/material.dart';
 import 'package:sign_in_customer/core/app_export.dart';
+=======
+import 'package:rashmi_s_application4/core/app_export.dart';
+>>>>>>> b6e40af233e614d3576443d43aee14f865693d04
 
 class AppDecoration {
-  // Fill decorations
-  static BoxDecoration get fillLightGreen => BoxDecoration(
-        color: appTheme.lightGreen500,
-      );
-
-  // Outline decorations
-  static BoxDecoration get outlineBlack => BoxDecoration(
-        color: theme.colorScheme.onPrimary,
-        boxShadow: [
-          BoxShadow(
-            color: appTheme.black90019.withOpacity(0.25),
-            spreadRadius: getHorizontalSize(2),
-            blurRadius: getHorizontalSize(2),
-            offset: Offset(
-              0,
-              5,
-            ),
-          ),
-        ],
-      );
-  static BoxDecoration get outlineBlack90019 => BoxDecoration(
-        border: Border.all(
-          color: appTheme.black90019,
-          width: getHorizontalSize(1),
-        ),
-      );
-  static BoxDecoration get outlineGray => BoxDecoration(
-        border: Border.all(
-          color: appTheme.gray400,
-          width: getHorizontalSize(1),
+  // Gradient decorations
+  static BoxDecoration get gradientBlueToGreen => BoxDecoration(
+        gradient: LinearGradient(
+          begin: Alignment(0.9, 0.04),
+          end: Alignment(0.1, 0.95),
+          colors: [
+            appTheme.blue900,
+            appTheme.green500,
+          ],
         ),
       );
 }
 
-class BorderRadiusStyle {
-  // Circle borders
-  static BorderRadius get circleBorder20 => BorderRadius.circular(
-        getHorizontalSize(20),
-      );
-  static BorderRadius get circleBorder272 => BorderRadius.circular(
-        getHorizontalSize(272),
-      );
-  static BorderRadius get circleBorder35 => BorderRadius.circular(
-        getHorizontalSize(35),
-      );
-
-  // Rounded borders
-  static BorderRadius get roundedBorder30 => BorderRadius.circular(
-        getHorizontalSize(30),
-      );
-}
+class BorderRadiusStyle {}
 
 // Comment/Uncomment the below code based on your Flutter SDK version.
 

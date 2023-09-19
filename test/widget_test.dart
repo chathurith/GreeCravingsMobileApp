@@ -8,8 +8,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
+<<<<<<< HEAD
 // ignore: unused_import
 import 'package:sign_in_customer/main.dart';
+=======
+import 'package:rashmi_s_application4/main.dart';
+>>>>>>> b6e40af233e614d3576443d43aee14f865693d04
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {

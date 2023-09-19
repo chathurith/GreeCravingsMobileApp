@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <!-- The INTERNET permission is required for development. Specifically,
          the Flutter tool needs it to communicate with the running application
+=======
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rashmisapplication.app">
+    <!-- Flutter needs it to communicate with the running application
+>>>>>>> b6e40af233e614d3576443d43aee14f865693d04
          to allow setting breakpoints, to provide hot reload, etc.
     -->
     <uses-permission android:name="android.permission.INTERNET"/>
