@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -27,3 +28,27 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+=======
+import 'package:flutter/material.dart';
+import 'package:qr_scanner/qr_code.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+       primaryColor: Colors.black54,
+       primarySwatch: Colors.green,
+      ),
+      home: const QRCode(),
+    );
+  }
+}
+>>>>>>> b414813be4216f2e80cf68202916ea4cfa94d5c5
