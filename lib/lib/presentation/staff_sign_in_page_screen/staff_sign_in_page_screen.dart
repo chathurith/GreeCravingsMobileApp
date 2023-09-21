@@ -24,7 +24,7 @@ class StaffSignInPageScreen extends StatelessWidget {
 
     return SafeArea(
       child: Scaffold(
-        backgroundColor: appTheme.lightGreen500,
+        backgroundColor: appTheme.Green500,
         resizeToAvoidBottomInset: false,
         body: Form(
           key: _formKey,
@@ -213,7 +213,7 @@ class StaffSignInPageScreen extends StatelessWidget {
                                   ),
                                 ),
                                 CustomElevatedButton(
-                                  text: "Sign Up",
+                                  text: "Sign UP",
                                   margin: getMargin(
                                     left: 8,
                                     top: 52,

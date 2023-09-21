@@ -1,6 +1,6 @@
 {
-    "name": "sign_in_customer",
-    "short_name": "sign_in_customer",
+    "name": "cafetaria_signin",
+    "short_name": "cafetaria_signin",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

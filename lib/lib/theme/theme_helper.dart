@@ -6,10 +6,6 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import '../../core/app_export.dart';
 
-import 'dart:ui';
-import 'package:flutter/material.dart';
-import '../../core/app_export.dart';
-
 String _appTheme = "primary";
 
 /// Helper class for managing themes and colors.
@@ -182,7 +178,7 @@ class PrimaryColors {
   Color get gray400 => Color(0XFFB1AFAF);
 
   // LightGreen
-  Color get lightGreen500 => Color.fromRGBO(143, 176, 96, 1);
+  Color get Green255 => Color.fromARGB(255, 74, 125, 3);
 }
 
 PrimaryColors get appTheme => ThemeHelper().themeColor();

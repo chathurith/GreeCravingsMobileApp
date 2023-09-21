@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: theme,
-      title: 'sign_in_customer',
+      title: 'application6',
       debugShowCheckedModeBanner: false,
       initialRoute: AppRoutes.staffSignInPageScreen,
       routes: AppRoutes.routes,

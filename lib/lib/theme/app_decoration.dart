@@ -3,8 +3,9 @@ import 'package:cafetaria_signin/core/app_export.dart';
 
 class AppDecoration {
   // Fill decorations
-  static BoxDecoration get fillGreen =>
-      BoxDecoration(color: appTheme.lightGreen500);
+  static BoxDecoration get fillGreen => BoxDecoration(
+        color: appTheme.lightGreen500,
+      );
 
   // Outline decorations
   static BoxDecoration get outlineBlack => BoxDecoration(
@@ -28,12 +29,6 @@ class AppDecoration {
         ),
       );
   static BoxDecoration get outlineGray => BoxDecoration(
-        border: Border.all(
-          color: appTheme.gray400,
-          width: getHorizontalSize(1),
-        ),
-      );
-  static BoxDecoration get outlinegray => BoxDecoration(
         border: Border.all(
           color: appTheme.gray400,
           width: getHorizontalSize(1),
