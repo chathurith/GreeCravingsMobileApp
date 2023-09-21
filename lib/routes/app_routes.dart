@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:rashmi_s_application4/presentation/loading_page_screen/loading_page_screen.dart';
+import 'package:application6/presentation/staff_sign_in_page_screen/staff_sign_in_page_screen.dart';
 
 class AppRoutes {
-  static const String loadingPageScreen = '/loading_page_screen';
+  static const String staffSignInPageScreen = '/staff_sign_in_page_screen';
 
   static Map<String, WidgetBuilder> routes = {
-    loadingPageScreen: (context) => LoadingPageScreen()
+    staffSignInPageScreen: (context) => StaffSignInPageScreen()
   };
 }

@@ -1,9 +1,11 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart' show BuildContext, MaterialApp, StatelessWidget, Widget, WidgetsFlutterBinding, runApp;
 import 'package:flutter/services.dart';
-import 'package:rashmi_s_application4/theme/theme_helper.dart';
-import 'package:rashmi_s_application4/routes/app_routes.dart';
+// ignore: unused_import
+import 'package:flutter/scheduler.dart';
+import 'package:application6/theme/theme_helper.dart';
+import 'package:application6/routes/app_routes.dart';
 
-void main() {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitUp,
@@ -19,9 +21,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: theme,
-      title: 'rashmi_s_application4',
+      title: 'application6',
       debugShowCheckedModeBanner: false,
-      initialRoute: AppRoutes.loadingPageScreen,
+      initialRoute: AppRoutes.staffSignInPageScreen,
       routes: AppRoutes.routes,
     );
   }

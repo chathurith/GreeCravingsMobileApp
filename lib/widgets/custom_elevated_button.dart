@@ -52,7 +52,12 @@ class CustomElevatedButton extends BaseButton {
         decoration: decoration,
         child: ElevatedButton(
           style: buttonStyle,
-          onPressed: isDisabled ?? false ? null : onTap ?? () {},
+          onPressed:  () {
+          //  Navigator.push(
+            //  context,
+             // MaterialPageRoute(builder: (context)=> const ()),
+             // );
+          },
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
