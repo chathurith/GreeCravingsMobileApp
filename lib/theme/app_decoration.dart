@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-<<<<<<< HEAD
 import 'package:application6/core/app_export.dart';
 
 class AppDecoration {
@@ -7,14 +6,6 @@ class AppDecoration {
   static BoxDecoration get fillLightGreen => BoxDecoration(
         color: appTheme.lightGreen500,
       );
-=======
-import 'package:cafetaria_signin/core/app_export.dart';
-
-class AppDecoration {
-  // Fill decorations
-  static BoxDecoration get fillGreen =>
-      BoxDecoration(color: appTheme.lightGreen500);
->>>>>>> b30a5031dc1a5c46f362e390efcf4412cecebb4b
 
   // Outline decorations
   static BoxDecoration get outlineBlack => BoxDecoration(
@@ -41,15 +32,6 @@ class AppDecoration {
         border: Border.all(
           color: appTheme.gray400,
           width: getHorizontalSize(1),
-<<<<<<< HEAD
-=======
-        ),
-      );
-  static BoxDecoration get outlinegray => BoxDecoration(
-        border: Border.all(
-          color: appTheme.gray400,
-          width: getHorizontalSize(1),
->>>>>>> b30a5031dc1a5c46f362e390efcf4412cecebb4b
         ),
       );
 }

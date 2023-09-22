@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-# cafetaria_signin
 
-<<<<<<< HEAD
 # application6
 ### Table of contents
 - [System requirements](#system-requirements)
@@ -12,37 +9,51 @@
 - [How you can improve code readability?](#how-you-can-improve-the-readability-of-code)
 - [Libraries and tools used](#libraries-and-tools-used)
 - [Support](#support)
-=======
-A new Flutter project.
->>>>>>> b30a5031dc1a5c46f362e390efcf4412cecebb4b
 
-## Getting Started
+### System requirements
 
-This project is a starting point for a Flutter application.
+Dart SDK Version 2.18.0 or greater.
+Flutter SDK Version 3.3.0 or greater.
 
-A few resources to get you started if this is your first Flutter project:
+### Figma design guidelines for better UI accuracy
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Read our guidelines to increase the accuracy of design-to-code conversion by optimizing Figma designs.
+https://docs.dhiwise.com/docs/Designguidelines/intro
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-=======
-# qr_page
+### Check the UI of the entire app
 
-A new Flutter project.
+Check the UI of all the app screens from a single place by setting up the 'initialRoute'  to AppNavigation in the AppRoutes.dart file.
 
-## Getting Started
+### Application structure
+After successful build, your application structure should look like this:
+                    
+```
+.
+├── android                         - It contains files required to run the application on an Android platform.
+├── assets                          - It contains all images and fonts of your application.
+├── ios                             - It contains files required to run the application on an iOS platform.
+├── lib                             - Most important folder in the application, used to write most of the Dart code..
+    ├── main.dart                   - Starting point of the application
+    ├── core
+    │   ├── app_export.dart         - It contains commonly used file imports
+    │   ├── constants               - It contains static constant class file
+    │   └── utils                   - It contains common files and utilities of the application
+    ├── presentation                - It contains widgets of the screens
+    ├── routes                      - It contains all the routes of the application
+    └── theme                       - It contains app theme and decoration classes
+    └── widgets                     - It contains all custom widget classes
+```
+### How to format your code?
 
-This project is a starting point for a Flutter application.
+- if your code is not formatted then run following command in your terminal to format code
+  ```
+  dart format .
+  ```
 
-A few resources to get you started if this is your first Flutter project:
+### How you can improve code readability?
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Resolve the errors and warnings that are shown in the application.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
->>>>>>> b414813be4216f2e80cf68202916ea4cfa94d5c5
+### Support
+
+If you have any problems or questions, go to our Discord channel, where we will help you as quickly as possible: https://discord.com/invite/rFMnCG5MZ7
