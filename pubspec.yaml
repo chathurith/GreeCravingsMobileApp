@@ -1,4 +1,4 @@
-name: application6
+name: cafetaria_signin
 description: A new Flutter project.
 version: 1.0.0+1
 environment: 
@@ -9,6 +9,7 @@ dependencies:
   cached_network_image: ^3.2.1
   flutter_svg: ^1.1.6
   intl: ^0.18.0
+  qr_code_scanner: ^1.0.1
 dev_dependencies: 
   flutter_test: 
     sdk: flutter

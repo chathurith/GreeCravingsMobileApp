@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:qr_code_scanner/qr_code_scanner.dart';
 
 class QRScanner extends StatefulWidget {
-  const QRScanner({super.key, required TextEditingController controller});
+ // const QRScanner({super.key, required TextEditingController controller});
 
   @override
   State<QRScanner> createState() => _QRScannerState();

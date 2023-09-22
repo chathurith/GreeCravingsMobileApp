@@ -1,9 +1,12 @@
 import 'package:cafetaria_signin/core/app_export.dart';
+import 'package:cafetaria_signin/lib/core/app_export.dart';
 import 'package:cafetaria_signin/widgets/custom_elevated_button.dart';
 import 'package:cafetaria_signin/widgets/custom_icon_button.dart';
 import 'package:cafetaria_signin/widgets/custom_outlined_button.dart';
 import 'package:cafetaria_signin/widgets/custom_text_form_field.dart';
 import 'package:flutter/material.dart';
+
+import '../../../core/utils/size_utils.dart';
 
 // ignore: must_be_immutable
 class StaffSignInPageScreen extends StatelessWidget {
@@ -24,7 +27,7 @@ class StaffSignInPageScreen extends StatelessWidget {
 
     return SafeArea(
       child: Scaffold(
-        backgroundColor: appTheme.Green500,
+        backgroundColor: appTheme,
         resizeToAvoidBottomInset: false,
         body: Form(
           key: _formKey,
