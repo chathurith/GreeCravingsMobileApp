@@ -48,28 +48,9 @@ class ThemeHelper {
       visualDensity: VisualDensity.standard,
       colorScheme: colorScheme,
       textTheme: TextThemes.textTheme(colorScheme),
-      outlinedButtonTheme: OutlinedButtonThemeData(
-        style: OutlinedButton.styleFrom(
-          backgroundColor: colorScheme.primary,
-          shape: RoundedRectangleBorder(
-            side: BorderSide(
-              color: appTheme.gray400,
-              width: 1,
-            ),
-            borderRadius: BorderRadius.circular(
-              20,
-            ),
-          ),
-          visualDensity: const VisualDensity(
-            vertical: -4,
-            horizontal: -4,
-          ),
-          padding: EdgeInsets.zero,
-        ),
-      ),
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
-          backgroundColor: colorScheme.primary,
+          backgroundColor: colorScheme.onPrimary,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(
               24,
@@ -95,16 +76,8 @@ class ThemeHelper {
 /// Class containing the supported text theme styles.
 class TextThemes {
   static TextTheme textTheme(ColorScheme colorScheme) => TextTheme(
-        bodyMedium: TextStyle(
-          color: colorScheme.primary.withOpacity(0.4),
-          fontSize: getFontSize(
-            14,
-          ),
-          fontFamily: 'Inter',
-          fontWeight: FontWeight.w400,
-        ),
         titleLarge: TextStyle(
-          color: colorScheme.onPrimary,
+          color: colorScheme.onPrimary.withOpacity(0.4),
           fontSize: getFontSize(
             20,
           ),
@@ -118,64 +91,61 @@ class TextThemes {
 class ColorSchemes {
   static final primaryColorScheme = ColorScheme.light(
     // Primary colors
-    primary: Color(0XFF19589D),
-    primaryContainer: Color(0XFFFFFFFF),
-    secondary: Color(0XFFFFFFFF),
-    secondaryContainer: Color(0XFF19589D),
-    tertiary: Color(0XFFFFFFFF),
-    tertiaryContainer: Color(0XFF19589D),
+    primary: Color(0XFFFFFFFF),
+    primaryContainer: Color(0XFF19589D),
+    secondary: Color(0XFF19589D),
+    secondaryContainer: Color(0XFFFFFFFF),
+    tertiary: Color(0XFF19589D),
+    tertiaryContainer: Color(0XFFFFFFFF),
 
     // Background colors
-    background: Color(0XFFFFFFFF),
+    background: Color(0XFF19589D),
 
     // Surface colors
-    surface: Color(0XFFFFFFFF),
-    surfaceTint: Color(0XFFFFFFFF),
-    surfaceVariant: Color(0XFF19589D),
+    surface: Color(0XFF19589D),
+    surfaceTint: Color(0XFF19589D),
+    surfaceVariant: Color(0XFFFFFFFF),
 
     // Error colors
-    error: Color(0XFFFFFFFF),
-    errorContainer: Color(0XFF19589D),
-    onError: Color(0XFF19589D),
-    onErrorContainer: Color(0XFFFFFFFF),
+    error: Color(0XFF19589D),
+    errorContainer: Color(0XFFFFFFFF),
+    onError: Color(0XFFFFFFFF),
+    onErrorContainer: Color(0XFF19589D),
 
     // On colors(text colors)
-    onBackground: Color(0XFF19589D),
-    onInverseSurface: Color(0XFF19589D),
-    onPrimary: Color(0XFFFFFFFF),
-    onPrimaryContainer: Color(0XFF19589D),
-    onSecondary: Color(0XFF19589D),
-    onSecondaryContainer: Color(0XFFFFFFFF),
-    onTertiary: Color(0XFF19589D),
-    onTertiaryContainer: Color(0XFFFFFFFF),
+    onBackground: Color(0XFFFFFFFF),
+    onInverseSurface: Color(0XFFFFFFFF),
+    onPrimary: Color(0XFF19589D),
+    onPrimaryContainer: Color(0XFFFFFFFF),
+    onSecondary: Color(0XFFFFFFFF),
+    onSecondaryContainer: Color(0XFF19589D),
+    onTertiary: Color(0XFFFFFFFF),
+    onTertiaryContainer: Color(0XFF19589D),
 
     // Other colors
-    outline: Color(0XFFFFFFFF),
-    outlineVariant: Color(0XFFFFFFFF),
-    scrim: Color(0XFFFFFFFF),
-    shadow: Color(0XFFFFFFFF),
+    outline: Color(0XFF19589D),
+    outlineVariant: Color(0XFF19589D),
+    scrim: Color(0XFF19589D),
+    shadow: Color(0XFF19589D),
 
     // Inverse colors
-    inversePrimary: Color(0XFFFFFFFF),
-    inverseSurface: Color(0XFFFFFFFF),
+    inversePrimary: Color(0XFF19589D),
+    inverseSurface: Color(0XFF19589D),
 
     // Pending colors
-    onSurface: Color(0XFF19589D),
-    onSurfaceVariant: Color(0XFFFFFFFF),
+    onSurface: Color(0XFFFFFFFF),
+    onSurfaceVariant: Color(0XFF19589D),
   );
 }
 
 /// Class containing custom colors for a primary theme.
 class PrimaryColors {
-  // Black
-  Color get black90019 => Color(0X19000000);
-
-  // Gray
-  Color get gray400 => Color(0XFFB1AFAF);
+  // Blackf
+  Color get black9003f => Color(0X3F000000);
 
   // LightGreen
-   Color get lightGreen500 => Color.fromRGBO(143, 176, 96, 1);
-
+  Color get lightGreen100 => Color(0XFFD5EAB8);
+  Color get lightGreen200 => Color(0XFFB3F5A8);
 }
 
 PrimaryColors get appTheme => ThemeHelper().themeColor();

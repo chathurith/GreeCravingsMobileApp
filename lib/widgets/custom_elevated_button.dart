@@ -1,5 +1,7 @@
-import 'package:application6/core/app_export.dart';
-import 'package:application6/widgets/base_button.dart';
+import 'dart:js';
+
+import 'package:application05/core/app_export.dart';
+import 'package:application05/widgets/base_button.dart';
 import 'package:flutter/material.dart';
 
 class CustomElevatedButton extends BaseButton {
@@ -52,7 +54,13 @@ class CustomElevatedButton extends BaseButton {
         decoration: decoration,
         child: ElevatedButton(
           style: buttonStyle,
-          onPressed: isDisabled ?? false ? null : onTap ?? () {},
+          onPressed: () {
+            Navigator.push(
+              context as BuildContext,
+               MaterialPageRoute(builder: (context)) => const customer_login_page()),
+               
+               );
+},
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -60,7 +68,7 @@ class CustomElevatedButton extends BaseButton {
               leftIcon ?? const SizedBox.shrink(),
               Text(
                 text,
-                style: buttonTextStyle ?? theme.textTheme.titleLarge,
+                style: buttonTextStyle ?? CustomTextStyles.titleLargePrimary,
               ),
               rightIcon ?? const SizedBox.shrink(),
             ],

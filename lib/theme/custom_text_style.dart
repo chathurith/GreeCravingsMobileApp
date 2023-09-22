@@ -7,6 +7,9 @@ import '../core/app_export.dart';
 
 class CustomTextStyles {
   // Title text style
+  static get titleLargeOnPrimary => theme.textTheme.titleLarge!.copyWith(
+        color: theme.colorScheme.onPrimary,
+      );
   static get titleLargePrimary => theme.textTheme.titleLarge!.copyWith(
         color: theme.colorScheme.primary,
       );

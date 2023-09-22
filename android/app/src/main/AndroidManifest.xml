@@ -6,7 +6,7 @@
          additional functionality it is fine to subclass or reimplement
          FlutterApplication and put your custom class here. -->
     <application
-        android:label="application6"
+        android:label="application05"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

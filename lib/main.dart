@@ -1,9 +1,9 @@
-import 'package:flutter/material.dart' show BuildContext, MaterialApp, StatelessWidget, Widget, WidgetsFlutterBinding, runApp;
+import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 // ignore: unused_import
 import 'package:flutter/scheduler.dart';
-import 'package:application6/theme/theme_helper.dart';
-import 'package:application6/routes/app_routes.dart';
+import 'package:application05/theme/theme_helper.dart';
+import 'package:application05/routes/app_routes.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -21,10 +21,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: theme,
-      title: 'application6',
+      title: 'application05',
       debugShowCheckedModeBanner: false,
-      initialRoute: AppRoutes.staffSignInPageScreen,
+      initialRoute: AppRoutes.pannelScreen,
       routes: AppRoutes.routes,
+      //log
     );
   }
 }
