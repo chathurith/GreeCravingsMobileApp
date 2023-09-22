@@ -1,6 +1,17 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import '../../core/app_export.dart';
+<<<<<<< HEAD
+=======
+
+import 'dart:ui';
+import 'package:flutter/material.dart';
+import '../../core/app_export.dart';
+
+import 'dart:ui';
+import 'package:flutter/material.dart';
+import '../../core/app_export.dart';
+>>>>>>> b30a5031dc1a5c46f362e390efcf4412cecebb4b
 
 String _appTheme = "primary";
 
@@ -174,7 +185,11 @@ class PrimaryColors {
   Color get gray400 => Color(0XFFB1AFAF);
 
   // LightGreen
+<<<<<<< HEAD
   Color get lightGreen500 => Color.fromRGBO(213, 234,184,1);
+=======
+  Color get lightGreen500 => Color.fromRGBO(143, 176, 96, 1);
+>>>>>>> b30a5031dc1a5c46f362e390efcf4412cecebb4b
 }
 
 PrimaryColors get appTheme => ThemeHelper().themeColor();

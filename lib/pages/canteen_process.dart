@@ -116,32 +116,24 @@ class CanteenProcess extends StatelessWidget {
                 ),
               ),
               Positioned(
-                left: 31,
-                top: 728,
-                child: Container(
-                  width: 370,
-                  height: 48,
-                  decoration: ShapeDecoration(
-                    color: Color(0xFF19589D),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                  ),
-                ),
-              ),
-              Positioned(
-                left: 158,
-                top: 740,
-                child: Text(
+                top:728,
+                left: 120,
+                width: 200,
+                height: 60,
+              child: ElevatedButton(
+                            onPressed: () {},
+                            child: Text(
                   'QR Scanner',
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 20,
+                    fontSize: 30,
                     fontFamily: 'Inter',
                     fontWeight: FontWeight.w400,
                   ),
                 ),
+                          ),
               ),
+
               Positioned(
                 left: 45,
                 top: 230,

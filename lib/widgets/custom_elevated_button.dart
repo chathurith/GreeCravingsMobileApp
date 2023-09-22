@@ -1,5 +1,5 @@
-import 'package:application6/core/app_export.dart';
-import 'package:application6/widgets/base_button.dart';
+import 'package:cafetaria_signin/core/app_export.dart';
+import 'package:cafetaria_signin/widgets/base_button.dart';
 import 'package:flutter/material.dart';
 
 class CustomElevatedButton extends BaseButton {
@@ -61,13 +61,14 @@ class CustomElevatedButton extends BaseButton {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisSize: MainAxisSize.min,
             children: [
-              leftIcon ?? const SizedBox.shrink(),
+              rightIcon ?? const SizedBox.shrink(),
               Text(
                 text,
                 style: buttonTextStyle ?? theme.textTheme.titleLarge,
               ),
-              rightIcon ?? const SizedBox.shrink(),
+              leftIcon ?? const SizedBox.shrink(),
             ],
           ),
         ),

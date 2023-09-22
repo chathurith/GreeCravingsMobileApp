@@ -27,7 +27,11 @@ int APIENTRY wWinMain(_In_ HINSTANCE instance, _In_opt_ HINSTANCE prev,
   FlutterWindow window(project);
   Win32Window::Point origin(10, 10);
   Win32Window::Size size(1280, 720);
-  if (!window.Create(L"flutter_mobile_app", origin, size)) {
+<<<<<<< HEAD
+  if (!window.Create(L"cafetaria_signin", origin, size)) {
+=======
+  if (!window.Create(L"qr_page", origin, size)) {
+>>>>>>> b414813be4216f2e80cf68202916ea4cfa94d5c5
     return EXIT_FAILURE;
   }
   window.SetQuitOnClose(true);

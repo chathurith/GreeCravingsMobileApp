@@ -1,10 +1,18 @@
 # Project-level configuration.
 cmake_minimum_required(VERSION 3.14)
-project(flutter_mobile_app LANGUAGES CXX)
+<<<<<<< HEAD
+project(cafetaria_signin LANGUAGES CXX)
 
 # The name of the executable created for the application. Change this to change
 # the on-disk name of your application.
-set(BINARY_NAME "flutter_mobile_app")
+set(BINARY_NAME "cafetaria_signin")
+=======
+project(qr_page LANGUAGES CXX)
+
+# The name of the executable created for the application. Change this to change
+# the on-disk name of your application.
+set(BINARY_NAME "qr_page")
+>>>>>>> b414813be4216f2e80cf68202916ea4cfa94d5c5
 
 # Explicitly opt in to modern CMake behaviors to avoid warnings with recent
 # versions of CMake.
