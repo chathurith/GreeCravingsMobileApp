@@ -1,11 +1,6 @@
 {
-<<<<<<< HEAD
-    "name": "cafetaria_signin",
-    "short_name": "cafetaria_signin",
-=======
-    "name": "qr_page",
-    "short_name": "qr_page",
->>>>>>> b414813be4216f2e80cf68202916ea4cfa94d5c5
+    "name": "mad_project",
+    "short_name": "mad_project",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
