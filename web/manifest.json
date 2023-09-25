@@ -1,6 +1,6 @@
 {
-    "name": "mad_project",
-    "short_name": "mad_project",
+    "name": "my_application_new",
+    "short_name": "my_application_new",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
